@@ -3,6 +3,7 @@
     package="com.curso.projetojuneko">
 
     <application
+        android:fullBackupOnly="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,7 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoJuneko">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.EsqueceuSenha"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Login"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
